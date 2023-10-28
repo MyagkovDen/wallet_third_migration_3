@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.denismiagkov.walletservice.repository.OperationDAOImplTest" time="2.532" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/denmiagkov/Programming/YLab/part3/project_3/Wallet-Service/target/test-classes:/home/denmiagkov/Programming/YLab/part3/project_3/Wallet-Service/target/classes:/home/denmiagkov/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/denmiagkov/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/denmiagkov/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/denmiagkov/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/denmiagkov/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/home/denmiagkov/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/home/denmiagkov/.m2/repository/org/liquibase/liquibase-core/4.24.0/liquibase-core-4.24.0.jar:/home/denmiagkov/.m2/repository/com/opencsv/opencsv/5.8/opencsv-5.8.jar:/home/denmiagkov/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/denmiagkov/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/home/denmiagkov/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/denmiagkov/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/denmiagkov/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/denmiagkov/.m2/repository/org/testcontainers/testcontainers/1.19.1/testcontainers-1.19.1.jar:/home/denmiagkov/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/denmiagkov/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/denmiagkov/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/denmiagkov/.m2/repository/org/apache/commons/commons-compress/1.24.0/commons-compress-1.24.0.jar:/home/denmiagkov/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar:/home/denmiagkov/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar:/home/denmiagkov/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/home/denmiagkov/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/home/denmiagkov/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.3.3/docker-java-transport-zerodep-3.3.3.jar:/home/denmiagkov/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/home/denmiagkov/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/home/denmiagkov/.m2/repository/org/testcontainers/junit-jupiter/1.19.1/junit-jupiter-1.19.1.jar:/home/denmiagkov/.m2/repository/org/testcontainers/postgresql/1.19.1/postgresql-1.19.1.jar:/home/denmiagkov/.m2/repository/org/testcontainers/jdbc/1.19.1/jdbc-1.19.1.jar:/home/denmiagkov/.m2/repository/org/testcontainers/database-commons/1.19.1/database-commons-1.19.1.jar:/home/denmiagkov/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/home/denmiagkov/Programming/jdk-17.0.7/lib"/>
+    <property name="sun.java.command" value="/home/denmiagkov/Programming/YLab/part3/project_3/Wallet-Service/target/surefire/surefirebooter-20231021114220583_3.jar /home/denmiagkov/Programming/YLab/part3/project_3/Wallet-Service/target/surefire 2023-10-21T11-42-20_490-jvmRun1 surefire-20231021114220583_1tmp surefire_0-20231021114220583_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/denmiagkov/Programming/YLab/part3/project_3/Wallet-Service/target/test-classes:/home/denmiagkov/Programming/YLab/part3/project_3/Wallet-Service/target/classes:/home/denmiagkov/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/denmiagkov/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/denmiagkov/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/denmiagkov/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/denmiagkov/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/home/denmiagkov/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/home/denmiagkov/.m2/repository/org/liquibase/liquibase-core/4.24.0/liquibase-core-4.24.0.jar:/home/denmiagkov/.m2/repository/com/opencsv/opencsv/5.8/opencsv-5.8.jar:/home/denmiagkov/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/denmiagkov/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/home/denmiagkov/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/denmiagkov/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/denmiagkov/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/denmiagkov/.m2/repository/org/testcontainers/testcontainers/1.19.1/testcontainers-1.19.1.jar:/home/denmiagkov/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/denmiagkov/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/denmiagkov/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/denmiagkov/.m2/repository/org/apache/commons/commons-compress/1.24.0/commons-compress-1.24.0.jar:/home/denmiagkov/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar:/home/denmiagkov/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar:/home/denmiagkov/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/home/denmiagkov/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/home/denmiagkov/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.3.3/docker-java-transport-zerodep-3.3.3.jar:/home/denmiagkov/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/home/denmiagkov/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/home/denmiagkov/.m2/repository/org/testcontainers/junit-jupiter/1.19.1/junit-jupiter-1.19.1.jar:/home/denmiagkov/.m2/repository/org/testcontainers/postgresql/1.19.1/postgresql-1.19.1.jar:/home/denmiagkov/.m2/repository/org/testcontainers/jdbc/1.19.1/jdbc-1.19.1.jar:/home/denmiagkov/.m2/repository/org/testcontainers/database-commons/1.19.1/database-commons-1.19.1.jar:/home/denmiagkov/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/denmiagkov"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="/home/denmiagkov/Programming/jdk-17.0.7"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/denmiagkov/Programming/YLab/part3/project_3/Wallet-Service"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/home/denmiagkov/Programming/YLab/part3/project_3/Wallet-Service/target/surefire/surefirebooter-20231021114220583_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.7+8-LTS-224"/>
+    <property name="user.name" value="denmiagkov"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.0-86-generic"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/denmiagkov/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="idea.version" value="2022.1.2"/>
+    <property name="java.version" value="17.0.7"/>
+    <property name="user.dir" value="/home/denmiagkov/Programming/YLab/part3/project_3/Wallet-Service"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.7+8-LTS-224"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="getLog" classname="com.denismiagkov.walletservice.repository.OperationDAOImplTest" time="0.241">
+    <system-out><![CDATA[Running Changeset: db/changelog/001-create-table.xml::001-create-schema::denismiagkov
+Running Changeset: db/changelog/001-create-table.xml::002-create-sequence::denismiagkov
+Running Changeset: db/changelog/001-create-table.xml::003-create-table::denismiagkov
+Running Changeset: db/changelog/001-create-table.xml::004-create-sequence::denismiagkov
+Running Changeset: db/changelog/001-create-table.xml::005-create-table::denismiagkov
+Running Changeset: db/changelog/001-create-table.xml::006-create-sequence::denismiagkov
+Running Changeset: db/changelog/001-create-table.xml::007-create-table::denismiagkov
+Running Changeset: db/changelog/001-create-table.xml::008-create-sequence::denismiagkov
+Running Changeset: db/changelog/001-create-table.xml::009-create-table::denismiagkov
+Running Changeset: db/changelog/001-create-table.xml::010-create-sequence::denismiagkov
+Running Changeset: db/changelog/001-create-table.xml::011-create-table::denismiagkov
+Running Changeset: db/changelog/002-insert-data.xml::001-insert-data::denismiagkov
+Running Changeset: db/changelog/002-insert-data.xml::002-insert-data::denismiagkov
+Running Changeset: db/changelog/002-insert-data.xml::003-insert-data::denismiagkov
+Running Changeset: db/changelog/002-insert-data.xml::004-insert-data::denismiagkov
+Running Changeset: db/changelog/002-insert-data.xml::005-insert-data::denismiagkov
+Running Changeset: db/changelog/002-insert-data.xml::006-insert-data::denismiagkov
+Running Changeset: db/changelog/002-insert-data.xml::007-insert-data::denismiagkov
+Running Changeset: db/changelog/002-insert-data.xml::008-insert-data::denismiagkov
+Running Changeset: db/changelog/002-insert-data.xml::009-insert-data::denismiagkov
+Running Changeset: db/changelog/002-insert-data.xml::010-insert-data::denismiagkov
+Running Changeset: db/changelog/002-insert-data.xml::011-insert-data::denismiagkov
+Running Changeset: db/changelog/002-insert-data.xml::012-insert-data::denismiagkov
+
+UPDATE SUMMARY
+Run:                         23
+Previously run:               0
+Filtered out:                 0
+-------------------------------
+Total change sets:           23
+
+Liquibase: Update has been successful. Rows affected: 35
+Миграции успешно выполнены!
+]]></system-out>
+    <system-err><![CDATA[Oct 21, 2023 11:42:33 AM liquibase.database
+INFO: Set default schema name to public
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: Creating database history table with name: migration.databasechangelog
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: Reading from migration.databasechangelog
+Oct 21, 2023 11:42:33 AM liquibase.lockservice
+INFO: Successfully acquired change log lock
+Oct 21, 2023 11:42:33 AM liquibase.command
+INFO: Using deploymentId: 7877753954
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: Reading from migration.databasechangelog
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: Custom SQL executed
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: ChangeSet db/changelog/001-create-table.xml::001-create-schema::denismiagkov ran successfully in 1ms
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: Sequence players_id_seq created
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: ChangeSet db/changelog/001-create-table.xml::002-create-sequence::denismiagkov ran successfully in 1ms
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: Table players created
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: ChangeSet db/changelog/001-create-table.xml::003-create-table::denismiagkov ran successfully in 2ms
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: Sequence accounts_id_seq created
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: ChangeSet db/changelog/001-create-table.xml::004-create-sequence::denismiagkov ran successfully in 1ms
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: Table accounts created
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: ChangeSet db/changelog/001-create-table.xml::005-create-table::denismiagkov ran successfully in 3ms
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: Sequence entries_id_seq created
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: ChangeSet db/changelog/001-create-table.xml::006-create-sequence::denismiagkov ran successfully in 1ms
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: Table entries created
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: ChangeSet db/changelog/001-create-table.xml::007-create-table::denismiagkov ran successfully in 2ms
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: Sequence transactions_id_seq created
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: ChangeSet db/changelog/001-create-table.xml::008-create-sequence::denismiagkov ran successfully in 1ms
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: Table transactions created
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: ChangeSet db/changelog/001-create-table.xml::009-create-table::denismiagkov ran successfully in 2ms
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: Sequence operations_id_seq created
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: ChangeSet db/changelog/001-create-table.xml::010-create-sequence::denismiagkov ran successfully in 1ms
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: Table operations created
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: ChangeSet db/changelog/001-create-table.xml::011-create-table::denismiagkov ran successfully in 2ms
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: New row inserted into players
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: ChangeSet db/changelog/002-insert-data.xml::001-insert-data::denismiagkov ran successfully in 2ms
+Oct 21, 2023 11:42:33 AM liquibase.changelog
+INFO: New row inserted into players
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: ChangeSet db/changelog/002-insert-data.xml::002-insert-data::denismiagkov ran successfully in 1ms
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: New row inserted into accounts
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: ChangeSet db/changelog/002-insert-data.xml::003-insert-data::denismiagkov ran successfully in 1ms
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: New row inserted into accounts
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: ChangeSet db/changelog/002-insert-data.xml::004-insert-data::denismiagkov ran successfully in 2ms
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: New row inserted into entries
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: ChangeSet db/changelog/002-insert-data.xml::005-insert-data::denismiagkov ran successfully in 1ms
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: New row inserted into entries
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: ChangeSet db/changelog/002-insert-data.xml::006-insert-data::denismiagkov ran successfully in 0ms
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: New row inserted into transactions
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: ChangeSet db/changelog/002-insert-data.xml::007-insert-data::denismiagkov ran successfully in 1ms
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: New row inserted into transactions
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: ChangeSet db/changelog/002-insert-data.xml::008-insert-data::denismiagkov ran successfully in 2ms
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: New row inserted into transactions
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: ChangeSet db/changelog/002-insert-data.xml::009-insert-data::denismiagkov ran successfully in 1ms
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: New row inserted into transactions
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: ChangeSet db/changelog/002-insert-data.xml::010-insert-data::denismiagkov ran successfully in 1ms
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: New row inserted into operations
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: ChangeSet db/changelog/002-insert-data.xml::011-insert-data::denismiagkov ran successfully in 1ms
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: New row inserted into operations
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: ChangeSet db/changelog/002-insert-data.xml::012-insert-data::denismiagkov ran successfully in 0ms
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: UPDATE SUMMARY
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: Run:                         23
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: Previously run:               0
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: Filtered out:                 0
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: -------------------------------
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: Total change sets:           23
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: Update summary generated
+Oct 21, 2023 11:42:34 AM liquibase.command
+INFO: Update command completed successfully.
+Oct 21, 2023 11:42:34 AM liquibase.lockservice
+INFO: Successfully released change log lock
+Oct 21, 2023 11:42:34 AM liquibase.command
+INFO: Command execution complete
+]]></system-err>
+  </testcase>
+  <testcase name="getOperationId" classname="com.denismiagkov.walletservice.repository.OperationDAOImplTest" time="0.148">
+    <system-out><![CDATA[
+UPDATE SUMMARY
+Run:                          0
+Previously run:              23
+Filtered out:                 0
+-------------------------------
+Total change sets:           23
+
+Liquibase: Update has been successful. Rows affected: 0
+Миграции успешно выполнены!
+]]></system-out>
+    <system-err><![CDATA[Oct 21, 2023 11:42:34 AM liquibase.database
+INFO: Set default schema name to public
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: Reading from migration.databasechangelog
+Oct 21, 2023 11:42:34 AM liquibase.lockservice
+INFO: Successfully acquired change log lock
+Oct 21, 2023 11:42:34 AM liquibase.command
+INFO: Using deploymentId: 7877754184
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: Reading from migration.databasechangelog
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: UPDATE SUMMARY
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: Run:                          0
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: Previously run:              23
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: Filtered out:                 0
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: -------------------------------
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: Total change sets:           23
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: Update summary generated
+Oct 21, 2023 11:42:34 AM liquibase.command
+INFO: Update command completed successfully.
+Oct 21, 2023 11:42:34 AM liquibase.lockservice
+INFO: Successfully released change log lock
+Oct 21, 2023 11:42:34 AM liquibase.command
+INFO: Command execution complete
+]]></system-err>
+  </testcase>
+  <testcase name="saveOperation" classname="com.denismiagkov.walletservice.repository.OperationDAOImplTest" time="0.151">
+    <system-out><![CDATA[
+UPDATE SUMMARY
+Run:                          0
+Previously run:              23
+Filtered out:                 0
+-------------------------------
+Total change sets:           23
+
+Liquibase: Update has been successful. Rows affected: 0
+Миграции успешно выполнены!
+]]></system-out>
+    <system-err><![CDATA[Oct 21, 2023 11:42:34 AM liquibase.database
+INFO: Set default schema name to public
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: Reading from migration.databasechangelog
+Oct 21, 2023 11:42:34 AM liquibase.lockservice
+INFO: Successfully acquired change log lock
+Oct 21, 2023 11:42:34 AM liquibase.command
+INFO: Using deploymentId: 7877754322
+Oct 21, 2023 11:42:34 AM liquibase.changelog
+INFO: Reading from migration.databasechangelog
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: UPDATE SUMMARY
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: Run:                          0
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: Previously run:              23
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: Filtered out:                 0
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: -------------------------------
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: Total change sets:           23
+Oct 21, 2023 11:42:34 AM liquibase.util
+INFO: Update summary generated
+Oct 21, 2023 11:42:34 AM liquibase.command
+INFO: Update command completed successfully.
+Oct 21, 2023 11:42:34 AM liquibase.lockservice
+INFO: Successfully released change log lock
+Oct 21, 2023 11:42:34 AM liquibase.command
+INFO: Command execution complete
+]]></system-err>
+  </testcase>
+</testsuite>
